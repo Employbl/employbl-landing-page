@@ -112,6 +112,7 @@
 					$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
 					$message;
 
+
 			// Bail if addEventListener isn't supported.
 				if (!('addEventListener' in $form))
 					return;
@@ -154,6 +155,10 @@
 					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
 					// but there's enough here to piece together a working AJAX submission call that does.
 						window.setTimeout(function() {
+
+							// Send form to Mailchimp
+							var $email = document.querySelectorAll('#email')[0].value;
+							console.log($email);
 
 							// Reset form.
 								$form.reset();
