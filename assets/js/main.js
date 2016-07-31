@@ -39,9 +39,9 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/golden-gate.jpeg': 'center',
-							'images/building-outside.jpeg': 'center',
-							'images/bg03.jpg': 'center'
+							'images/rsz_golden-gate.jpg': 'center',
+							'images/rsz_building-outside.jpg': 'center',
+							'images/rsz_work-station.jpg': 'center'
 						},
 
 					// Delay.
