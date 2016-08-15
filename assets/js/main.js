@@ -140,39 +140,51 @@
 
 			// Events.
 			// Note: If you're *not* using AJAX, get rid of this event listener.
-				$form.addEventListener('submit', function(event) {
+				// $form.addEventListener('submit', function(event) {
 
-					event.stopPropagation();
-					event.preventDefault();
+				// 	event.stopPropagation();
+				// 	event.preventDefault();
 
-					// Hide message.
-						$message._hide();
+				// 	// Hide message.
+				// 		$message._hide();
 
-					// Disable submit.
-						$submit.disabled = true;
+				// 	// Disable submit.
+				// 		$submit.disabled = true;
 
-					// Process form.
-					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
-					// but there's enough here to piece together a working AJAX submission call that does.
-						window.setTimeout(function() {
+				// 	// Process form.
+				// 	// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
+				// 	// but there's enough here to piece together a working AJAX submission call that does.
+				// 		window.setTimeout(function() {
 
-							// Send form to Mailchimp
-							var $email = document.querySelectorAll('#email')[0].value;
-							console.log($email);
+				// 			// Send form to Mailchimp
+				// 			var $email = document.querySelectorAll('#email')[0].value;
+				// 			console.log($email);
 
-							// Reset form.
-								$form.reset();
+				// 			$('#signup-form').ajaxChimp({
+    // 							url: "//employbl.us14.list-manage.com/subscribe/post?u=47fb297009ff2ef46d6d7c2c1&amp;id=2c85d2b9cf",
+    // 							callback: function(res){
+    // 								if (resp.result === 'success') {
+    //     								// Do stuff
+    //     								console.log('It worked!');
+    //     								console.log(res);
+    // 								}
+    // 								console.log(res);
+    // 							}
+				// 			});
 
-							// Enable submit.
-								$submit.disabled = false;
+				// 			// Reset form.
+				// 				$form.reset();
 
-							// Show message.
-								$message._show('success', 'Thank you!');
-								//$message._show('failure', 'Something went wrong. Please try again.');
+				// 			// Enable submit.
+				// 				$submit.disabled = false;
 
-						}, 750);
+				// 			// Show message.
+				// 				$message._show('success', 'Thank you!');
+				// 				//$message._show('failure', 'Something went wrong. Please try again.');
 
-				});
+				// 		}, 750);
+
+				// });
 
 		})();
 

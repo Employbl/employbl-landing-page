@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/connor11528/listor-landing-page#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "mailchimp-api": "^2.0.7"
   }
 }
